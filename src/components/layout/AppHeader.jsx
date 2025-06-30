@@ -19,7 +19,7 @@ function AppHeader() {
     const [modal, setModal] = useState(false)
     const {crypto} = useCrypto()
     const [coin, setCoin] = useState(null)
-    const [openD, setOpenD] = useState(true);
+    const [openD, setOpenD] = useState(false);
 
     useEffect(() => {
         const keypress = event => {
@@ -92,7 +92,7 @@ function AppHeader() {
                 open={openD}
                 destroyOnHidden
             >
-                <AddAssetForm />
+                <AddAssetForm onClose={() => setOpenD(false)}/>
             </Drawer>
             
         </Layout.Header>

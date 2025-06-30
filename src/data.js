@@ -623,9 +623,9 @@ export const cryptoAssets = [
     date: new Date(),
   },
   {
-    id: 'tron',
+    id: 'binance-coin',
     amount: 100,
-    price: 0.092,
+    price: 300.01,
     date: new Date(),
   },
 ]
